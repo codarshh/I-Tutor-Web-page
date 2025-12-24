@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <title>I-Tutor-a web page development class</title>
+</head>
+
+<body class="bg-neutral-950">
+    <nav class="bg-stone-500 text-white px-6 py-4 shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <!-- Left: Logo -->
+            <div class="text-3xl font-extrabold tracking-wide">
+                I-Tutor
+            </div>
+
+            <!-- Mobile hamburger button -->
+            <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+                ☰
+            </button>
+
+            <!-- Center Navigation Links -->
+            <ul id="menu" class="hidden md:flex gap-10 text-lg">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">About</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact Us</a></li>
+            </ul>
+
+            <!-- Right: Login & Signup -->
+            <div class="hidden md:flex gap-4">
+                <a href="#" class="font-bold px-4 py-1 rounded-lg border border-gray-400 hover:bg-gray-400">Login</a>
+                <a href="#" class="font-bold px-4 py-1 rounded-lg bg-blue-600 hover:bg-slate-400">Sign Up</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mobile dropdown -->
+    <div id="mobileMenu" class="hidden bg-neutral-800 text-white p-4 space-y-4 md:hidden">
+        <a href="#" class="block hover:text-gray-300 text-lg">Home</a>
+        <a href="#" class="block hover:text-gray-300 text-lg">About</a>
+        <a href="#" class="block hover:text-gray-300 text-lg">Contact Us</a>
+
+        <a href="#"
+            class="block font-bold px-4 py-2 rounded-lg border border-gray-400 hover:bg-gray-700 text-center">Login</a>
+        <a href="#" class="block font-bold px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-center">Sign Up</a>
+    </div>
+    <!-- NAV-BAR ENDS HERE  -->
+    <!-- image section starts here -->
+    <header class="w-full h-auto">
+        <img class="w-full hidden md:block"
+            src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/web.jpg" alt="" srcset="">
+        <img class="w-full md:hidden"
+            src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/mobile.jpg" alt="" srcset="">
+    </header>
+
+    <!-- Our Students section -->
+    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center">
+            <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center"> "Pure Hardwork, No Shortcuts!"</p>
+            <div class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+        </div>
+    </div>
+
+
+<div class="w-full max-w-6xl mx-auto flex justify-between items-center px-10 mt-10">
+
+    <!-- Card 1 - Left -->
+    <div class="w-46 flex flex-col items-center">
+        <img class="w-44 h-44 object-cover"
+             src="https://cdn-icons-png.freepik.com/512/9122/9122311.png"
+             alt="">
+        <p class="text-3xl font-bold text-white mt-4">600+</p>
+        <p class="text-xl font-semibold text-gray-400">Different Courses</p>
+    </div>
+
+    <!-- Card 2 - Middle (Circle Image) -->
+    <div class="w-46 flex flex-col items-center">
+        <img class="w-44 h-44 rounded-full object-cover"
+             src="https://img.icons8.com/clouds/1200/student-male.jpg"
+             alt="">
+        <p class="text-3xl font-bold text-white mt-4">200+</p>
+        <p class="text-xl font-semibold text-gray-400">Expert Mentors</p>
+    </div>
+
+    <!-- Card 3 - Right -->
+    <div class="w-46 flex flex-col items-center">
+        <img class="w-44 h-44 object-cover"
+             src="https://images.icon-icons.com/943/PNG/512/shoppaymentorderbuy-50_icon-icons.com_73844.png"
+             alt="">
+        <p class="text-3xl font-bold text-white mt-4">50k+</p>
+        <p class="text-xl font-semibold text-gray-400">Successful Students</p>
+    </div>
+
+</div>
+
+
+    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center">
+            <p class="text-indigo-800 font-bold text-3xl md:text-4xl text-center"> "Our Product"</p>
+            <div class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+        </div>
+    </div>
+
+
+<!--                ****************************             -->
+
+<div class="w-full max-w-6xl mx-auto flex flex-row justify-end items-center px-10 mt-10 flex-wrap gap-10">
+
+    <!-- Card 1 -->
+    <div class="w-46 flex flex-col items-center">
+        <img class="w-44 h-44 object-cover rounded-full"
+             src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYKGKn0wcPJdBxoKOBoKjXuwXGAYgpFCUhH97wggWuZ0qSTvwR"
+             alt="">
+        <p class="text-3xl font-bold text-white mt-4">300+</p>
+        <p class="text-xl font-semibold text-gray-400">Online Resources</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="w-46 flex flex-col items-center">
+        <img class="w-44 h-44 rounded-full object-cover"
+             src="https://img.icons8.com/bubbles/1200/resume.jpg"
+             alt="">
+        <p class="text-3xl font-bold text-white mt-4">120+</p>
+        <p class="text-xl font-semibold text-gray-400">Resume Templates</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="w-46 flex flex-col items-center">
+        <img class="w-44 h-44 object-cover rounded-full"
+             src="https://img.icons8.com/bubbles/1200/internship.jpg"
+             alt="">
+        <p class="text-3xl font-bold text-white mt-4">50+</p>
+        <p class="text-xl font-semibold text-gray-400">Internships</p>
+    </div>
+
+    <!-- Card 4 (Updated Image + Rounded) -->
+    <div class="w-46 flex flex-col items-center">
+        <img class="w-44 h-44 rounded-full object-cover"
+             src="https://img.icons8.com/bubbles/1200/omnichannel.jpg"
+             alt="">
+        <p class="text-3xl font-bold text-white mt-4">80+</p>
+        <p class="text-xl font-semibold text-gray-400">Skill Programs</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="w-46 flex flex-col items-center">
+        <img class="w-44 h-44 rounded-full object-cover"
+             src="https://img.freepik.com/premium-vector/award-medal-icon_1277261-2164.jpg"
+             alt="">
+        <p class="text-3xl font-bold text-white mt-4">25+</p>
+        <p class="text-xl font-semibold text-gray-400">Certifications</p>
+    </div>
+
+</div>
+
+<footer class="bg-neutral-800 text-gray-300 pt-16 pb-10 mt-20">
+
+  <!-- Top Section -->
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+
+    <!-- Logo + Motivation -->
+    <div>
+      <img 
+        src="https://play-lh.googleusercontent.com/XSZdPrwwZI54l-quD2kaiDI7rMLpdyK6ih4GFS1dpuoFvg0M7Ui9JEUcYe-7vvvh6U6Z" 
+        class="w-24 h-24 rounded-xl object-cover shadow-lg"
+        alt="I-Tutor Logo">
+
+      <h2 class="text-2xl font-bold text-white mt-4">I-Tutor</h2>
+
+      <p class="mt-3 text-gray-400 leading-relaxed">
+        “Empowering students with the skills of tomorrow through personalized learning.”
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 mt-5">
+        <a href="#" class="hover:text-white text-2xl">🌐</a>
+        <a href="#" class="hover:text-white text-2xl">📘</a>
+        <a href="#" class="hover:text-white text-2xl">▶️</a>
+        <a href="#" class="hover:text-white text-2xl">🐦</a>
+      </div>
+    </div>
+
+    <!-- About Column -->
+    <div>
+      <h3 class="text-white text-xl font-semibold mb-4">About</h3>
+      <ul class="space-y-3">
+        <li><a href="#" class="hover:text-white transition">About I-Tutor</a></li>
+        <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column -->
+    <div>
+      <h3 class="text-white text-xl font-semibold mb-4">Products</h3>
+      <ul class="space-y-3">
+        <li><a href="#" class="hover:text-white transition">I-Tutor Lab</a></li>
+        <li><a href="#" class="hover:text-white transition">Job Portal</a></li>
+        <li><a href="#" class="hover:text-white transition">Experience Portal</a></li>
+        <li><a href="#" class="hover:text-white transition">Become an Affiliate</a></li>
+        <li><a href="#" class="hover:text-white transition">Hall of Fame</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter Column -->
+    <div>
+      <h3 class="text-white text-xl font-semibold mb-4">Stay Updated</h3>
+      <p class="text-gray-400 mb-4">Subscribe for latest courses, updates and offers.</p>
+
+      <div class="flex items-center bg-neutral-800 rounded-lg overflow-hidden">
+        <input 
+          type="email" 
+          placeholder="Enter your email" 
+          class="bg-transparent px-4 py-3 w-full outline-none text-gray-200">
+        <button class="bg-blue-600 px-4 py-3 font-semibold text-white hover:bg-blue-700 transition">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto h-px  from-transparent via-gray-700 to-transparent mt-12 mb-6"></div>
+
+  <!-- Bottom Section -->
+  <div class="max-w-7xl mx-auto px-6 flex flex-wrap md:flex-nowrap justify-between text-gray-500 text-sm">
+
+    <p>© 2025 I-Tutor. All rights reserved.</p>
+
+    <ul class="flex gap-6 mt-4 md:mt-0">
+      <li><a href="#" class="hover:text-white transition">Discord</a></li>
+      <li><a href="#" class="hover:text-white transition">I-Tutor YouTube</a></li>
+      <li><a href="#" class="hover:text-white transition">Careers</a></li>
+    </ul>
+
+  </div>
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>
